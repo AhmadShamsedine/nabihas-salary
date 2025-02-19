@@ -28,3 +28,14 @@ def get_amounts(salary):
             
         except ValueError:
             print("Invalid input. Please enter numeric values for the amounts.")
+def get_salary():
+    """
+    Prompts the user to enter their monthly salary and returns the value.
+    """
+    while True:
+        try:
+            salary = float(input("Nabiha, please enter your salary for the month: "))
+            print(f"Thank you, Nabiha! Your salary for the month is ${salary:.2f}.")
+            return salary
+        except ValueError:
+            print("Invalid input. Please enter a numeric value for the salary.")
