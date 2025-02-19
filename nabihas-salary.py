@@ -39,7 +39,7 @@ def get_salary():
             return salary
         except ValueError:
             print("Invalid input. Please enter a numeric value for the salary.")
-            
+
 def get_month():
     """
     Prompts the user to enter a month and validates the input.
@@ -55,4 +55,15 @@ def get_month():
             print(f"Welcome to {user_input.capitalize()}.")
             break
         else:
-            print("Invalid month. Please enter a real month of the year.")           
+            print("Invalid month. Please enter a real month of the year.")
+            
+def main():
+    """
+    Main function that coordinates the flow of the program.
+    """
+    get_month()
+    salary = get_salary()
+    get_amounts(salary)
+
+if __name__ == "__main__":
+    main()                       
