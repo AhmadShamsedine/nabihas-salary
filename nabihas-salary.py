@@ -39,3 +39,20 @@ def get_salary():
             return salary
         except ValueError:
             print("Invalid input. Please enter a numeric value for the salary.")
+            
+def get_month():
+    """
+    Prompts the user to enter a month and validates the input.
+    """
+    months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ]
+
+    while True:
+        user_input = input("Please enter the name of a month: ")
+        if user_input.capitalize() in months:
+            print(f"Welcome to {user_input.capitalize()}.")
+            break
+        else:
+            print("Invalid month. Please enter a real month of the year.")           
