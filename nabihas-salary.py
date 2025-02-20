@@ -17,13 +17,15 @@ def get_amounts(salary):
             yearlyrent = rent_amount * 12
             yearlyelectricity = electricity_amount * 12
             totalsalaryrased2 = salary **2
-            
+            newsaving = savings_amount + 50
+
             print(f"Thank you, Nabiha! Your amounts are: Savings: ${savings_amount:.2f}, Rent: ${rent_amount:.2f}, Electricity: ${electricity_amount:.2f}.")
             print(f"The total amount spent is: ${total_amount:.2f}.")
             print(f"The remainder of your salary after expenses is: ${remainder:.2f}.")
             print(f"The yearly rent cost : ${yearlyrent:.2f}.")
             print(f"The yearly Electricity cost : ${yearlyelectricity:.2f}.")
             print(f"Total salary for the month raised to the power of 2 : ${totalsalaryrased2:.2f}.")
+            print(f"The ammount of saving after adding 50 $ is : ${newsaving:.2f}.")
             break
             
         except ValueError:
